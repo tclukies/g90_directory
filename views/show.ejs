@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+<h1>hello</h1>
+    <li>
+        <%= student.first_name %>
+        <%= student.last_name %>
+        <%= student.prev_occupation %>
+        <%= student.hometown_lat %>
+        <%= student.hometown_long %>
+    </li>
+    <img src="<%= student.photo %>">
+    <a href="/students/<%=student.id%>/edit">Edit!</a>
+    <form action="/students/<%=student.id%>?_method=delete" method='POST'>\
+    <button>Delete!</button>
+    </form>
+
+<% include ./partials/footer %>

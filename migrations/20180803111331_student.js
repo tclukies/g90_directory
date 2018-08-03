@@ -4,8 +4,9 @@ exports.up = function(knex, Promise) {
         table.text("first_name");
         table.text("last_name");
         table.text("photo");
+        table.text("hometown_lat");
+        table.text("hometown_long");
         table.text("prev_occupation");
-        table.text("hometown");
     });
 };
 
